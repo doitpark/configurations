@@ -17,15 +17,17 @@ set pastetoggle=<F10>
 
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'scrooloose/nerdtree'
 call plug#end()
+
 
 map <C-n> :NERDTreeToggle<CR>
 map <F5> :GoBuild<CR>
 
-execute pathogen#infect()
-call pathogen#helptags()
-
-colorscheme monokai
+colorscheme PaperColor
+set background=dark
 set hlsearch
 		
 let g:go_fmt_command = "goimports"
+
+set tags=./tags,tags;~
