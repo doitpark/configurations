@@ -18,6 +18,7 @@ set pastetoggle=<F10>
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'scrooloose/nerdtree'
+Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 
